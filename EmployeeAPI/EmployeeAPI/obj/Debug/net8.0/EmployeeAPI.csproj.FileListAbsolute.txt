@@ -33,3 +33,4 @@ D:\Vs_Code\ASP DOT NET SERIES 01\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\refint
 D:\Vs_Code\ASP DOT NET SERIES 01\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\EmployeeAPI.pdb
 D:\Vs_Code\ASP DOT NET SERIES 01\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\EmployeeAPI.genruntimeconfig.cache
 D:\Vs_Code\ASP DOT NET SERIES 01\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\ref\EmployeeAPI.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\EmployeeAPI.sourcelink.json

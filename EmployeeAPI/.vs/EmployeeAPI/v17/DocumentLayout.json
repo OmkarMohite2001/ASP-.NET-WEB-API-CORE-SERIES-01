@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|d:\\vs_code\\asp dot net series 01\\employeeapi\\employeeapi\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC939B3-554B-4E63-B527-BA1CA9392B0E}|EmployeeAPI\\EmployeeAPI.csproj|solutionrelative:employeeapi\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,65 +42,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "EmployeeAPI\\WeatherForecast.cs",
-              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "EmployeeAPI\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T14:56:58.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "EmployeeAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "EmployeeAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T14:48:42.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "EmployeeAPI\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "EmployeeAPI\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeAPI\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeAPI\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T14:49:33.392Z",
+              "WhenOpened": "2026-08-05T13:55:07.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeAPI\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeAPI\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T13:50:21.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "EmployeeAPI\\appsettings.Development.json",
-              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
-              "RelativeToolTip": "EmployeeAPI\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-03T14:43:40.882Z",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "EmployeeAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "EmployeeAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T13:46:23.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "LoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Middleware\\LoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "EmployeeAPI\\Middleware\\LoggingMiddleware.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Middleware\\LoggingMiddleware.cs",
+              "RelativeToolTip": "EmployeeAPI\\Middleware\\LoggingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T14:07:48.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeAPI\\Program.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\Program.cs",
               "RelativeToolTip": "EmployeeAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-03T14:28:47.439Z",
               "EditorCaption": ""
