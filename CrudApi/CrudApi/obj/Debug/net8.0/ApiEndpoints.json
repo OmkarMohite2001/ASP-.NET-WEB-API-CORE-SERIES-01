@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "CrudApi.Controllers.HotelController",
+    "Method": "GetHotelReq",
+    "RelativePath": "api/Hotel/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "Get",
     "RelativePath": "api/omkar",
@@ -18,8 +34,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "employee",
-        "Type": "CrudApi.Model.Employee",
+        "Name": "request",
+        "Type": "CrudApi.DTOs.CreateEmployeeRequestDto",
         "IsRequired": true
       }
     ],

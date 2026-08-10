@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\dtos\\hotelresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\dtos\\hotelresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\model\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\model\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\dtos\\createemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\dtos\\createemployeerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|d:\\vs_code\\asp dot net series 01\\crudapi\\crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B10939-06AA-4735-86FF-EAE25E8B7A84}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +58,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "HotelController.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Controllers\\HotelController.cs",
+              "RelativeDocumentMoniker": "CrudApi\\Controllers\\HotelController.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Controllers\\HotelController.cs",
+              "RelativeToolTip": "CrudApi\\Controllers\\HotelController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T13:57:16.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotelResponseDto.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\DTOs\\HotelResponseDto.cs",
+              "RelativeDocumentMoniker": "CrudApi\\DTOs\\HotelResponseDto.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\DTOs\\HotelResponseDto.cs",
+              "RelativeToolTip": "CrudApi\\DTOs\\HotelResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T13:55:28.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Model\\Hotel.cs",
+              "RelativeDocumentMoniker": "CrudApi\\Model\\Hotel.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Model\\Hotel.cs",
+              "RelativeToolTip": "CrudApi\\Model\\Hotel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T13:53:56.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateEmployeeRequestDto.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\DTOs\\CreateEmployeeRequestDto.cs",
+              "RelativeDocumentMoniker": "CrudApi\\DTOs\\CreateEmployeeRequestDto.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\DTOs\\CreateEmployeeRequestDto.cs",
+              "RelativeToolTip": "CrudApi\\DTOs\\CreateEmployeeRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T13:42:26.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Program.cs",
               "RelativeDocumentMoniker": "CrudApi\\Program.cs",
@@ -54,28 +122,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "CrudApi\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "CrudApi\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAA4wE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T14:57:29.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "CrudApi\\Services\\EmployeeService.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Services\\EmployeeService.cs",
               "RelativeToolTip": "CrudApi\\Services\\EmployeeService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAtwBYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:52:59.664Z"
+              "WhenOpened": "2026-08-07T14:52:59.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -85,21 +154,23 @@
               "RelativeDocumentMoniker": "CrudApi\\Repository\\EmployeeRepository.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Repository\\EmployeeRepository.cs",
               "RelativeToolTip": "CrudApi\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwEEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:46:17.88Z"
+              "WhenOpened": "2026-08-07T14:46:17.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Model\\Employee.cs",
               "RelativeDocumentMoniker": "CrudApi\\Model\\Employee.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Model\\Employee.cs",
               "RelativeToolTip": "CrudApi\\Model\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:41:20.4Z"
+              "WhenOpened": "2026-08-07T14:41:20.4Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,5 +1,6 @@
 ﻿using CrudApi.Model;
 using CrudApi.Services;
+using CrudApi.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,11 +22,16 @@ namespace CrudApi.Controllers
             var employees = _service.GetEmployees();
             return Ok(employees);
         }
+        //public IActionResult AddEmployee(Employee employee)
+        //{
+        //     _service.AddEmployee(employee);
+        //    return Ok();
+        //}
         [HttpPost]
-        public IActionResult AddEmployee(Employee employee)
+        public IActionResult AddEmployee(CreateEmployeeRequestDto request)
         {
-            _service.AddEmployee(employee);
-            return Unauthorized();
+            
+            return Ok(request);
         }
         [HttpGet("{id}")]
         public IActionResult getById(int id)

@@ -38,21 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "EmployeeAPI\\appsettings.Development.json",
-              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
-              "RelativeToolTip": "EmployeeAPI\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-06T14:32:10.659Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -63,16 +50,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EmployeeAPI\\appsettings.Development.json",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.Development.json",
+              "RelativeToolTip": "EmployeeAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-06T14:32:10.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.json",
               "RelativeDocumentMoniker": "EmployeeAPI\\appsettings.json",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EmployeeAPI\\EmployeeAPI\\appsettings.json",
               "RelativeToolTip": "EmployeeAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-06T14:08:02.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T14:08:02.822Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "EmployeeAPI\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T13:55:07.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-05T13:55:07.042Z"
             },
             {
               "$type": "Document",
@@ -133,8 +131,7 @@
               "RelativeToolTip": "EmployeeAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T14:28:47.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-03T14:28:47.439Z"
             }
           ]
         }
