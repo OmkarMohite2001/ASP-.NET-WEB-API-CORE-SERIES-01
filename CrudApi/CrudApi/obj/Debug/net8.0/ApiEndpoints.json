@@ -2,7 +2,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "Get",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/omkar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "AddEmployee",
-    "RelativePath": "api/Employee",
+    "RelativePath": "api/omkar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "getById",
-    "RelativePath": "api/Employee/{id}",
+    "RelativePath": "api/omkar/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "UpdateEmployee",
-    "RelativePath": "api/Employee/{id}",
+    "RelativePath": "api/omkar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -65,7 +65,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "DeleteEmployee",
-    "RelativePath": "api/Employee/{id}",
+    "RelativePath": "api/omkar/{id}/{omkar}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -74,6 +74,11 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "omkar",
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -81,7 +86,7 @@
   {
     "ContainingType": "CrudApi.Controllers.EmployeeController",
     "Method": "UpdateSalary",
-    "RelativePath": "api/Employee/{id}/salary",
+    "RelativePath": "api/omkar/{id}/salary",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,

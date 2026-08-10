@@ -50,8 +50,7 @@
               "RelativeToolTip": "CrudApi\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:58:24.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T14:58:24.047Z"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "CrudApi\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\CrudApi\\CrudApi\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "CrudApi\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowEMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T14:57:29.391Z",
               "EditorCaption": ""
@@ -76,8 +75,7 @@
               "RelativeToolTip": "CrudApi\\Services\\EmployeeService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:52:59.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T14:52:59.664Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "CrudApi\\Repository\\EmployeeRepository.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwEEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:46:17.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T14:46:17.88Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "CrudApi\\Model\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T14:41:20.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T14:41:20.4Z"
             }
           ]
         }

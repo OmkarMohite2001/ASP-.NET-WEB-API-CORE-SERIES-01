@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Employee": {
+    "/api/omkar": {
       "get": {
         "tags": [
           "Employee"
@@ -46,7 +46,7 @@
         }
       }
     },
-    "/api/Employee/{id}": {
+    "/api/omkar/{id}": {
       "get": {
         "tags": [
           "Employee"
@@ -107,7 +107,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/omkar/{id}/{omkar}": {
       "delete": {
         "tags": [
           "Employee"
@@ -121,6 +123,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "omkar",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -130,7 +140,7 @@
         }
       }
     },
-    "/api/Employee/{id}/salary": {
+    "/api/omkar/{id}/salary": {
       "patch": {
         "tags": [
           "Employee"

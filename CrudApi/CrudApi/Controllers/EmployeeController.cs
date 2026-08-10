@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CrudApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/omkar")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -25,7 +25,7 @@ namespace CrudApi.Controllers
         public IActionResult AddEmployee(Employee employee)
         {
             _service.AddEmployee(employee);
-            return Ok("Employee Added Successfully");
+            return Unauthorized();
         }
         [HttpGet("{id}")]
         public IActionResult getById(int id)
@@ -47,7 +47,7 @@ namespace CrudApi.Controllers
             }
             return Ok("Employee Updated Successfully");
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}/{omkar}")]
         public IActionResult DeleteEmployee(int id)
         {
             bool result = (_service.DeleteEmployee(id));
