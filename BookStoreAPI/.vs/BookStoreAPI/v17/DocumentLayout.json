@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|d:\\vs_code\\asp dot net series 01\\bookstoreapi\\bookstoreapi\\dtos\\createbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\dtos\\createbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|d:\\vs_code\\asp dot net series 01\\bookstoreapi\\bookstoreapi\\dtos\\uploadbooksrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\dtos\\uploadbooksrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|d:\\vs_code\\asp dot net series 01\\bookstoreapi\\bookstoreapi\\dtos\\createbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\dtos\\createbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|d:\\vs_code\\asp dot net series 01\\bookstoreapi\\bookstoreapi\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|d:\\vs_code\\asp dot net series 01\\bookstoreapi\\bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC44B0A2-6338-41BD-97EF-6F8056FD6442}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BookStoreAPI\\Program.cs",
+              "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\Program.cs",
+              "RelativeToolTip": "BookStoreAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T13:27:09.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UploadBooksRequestDto.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\DTOs\\UploadBooksRequestDto.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\DTOs\\UploadBooksRequestDto.cs",
@@ -51,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CreateBookRequestDto.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\DTOs\\CreateBookRequestDto.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\DTOs\\CreateBookRequestDto.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\DTOs\\CreateBookRequestDto.cs",
               "RelativeToolTip": "BookStoreAPI\\DTOs\\CreateBookRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-10T14:45:50.881Z",
               "EditorCaption": ""
@@ -70,7 +87,7 @@
               "RelativeDocumentMoniker": "BookStoreAPI\\Controllers\\BooksController.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\BookStoreAPI\\BookStoreAPI\\Controllers\\BooksController.cs",
               "RelativeToolTip": "BookStoreAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-10T14:33:50.645Z",
               "EditorCaption": ""

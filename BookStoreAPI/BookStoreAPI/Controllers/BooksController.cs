@@ -9,10 +9,10 @@ namespace BookStoreAPI.Controllers
     public class BooksController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetBooks ([FromRoute] int Id, [FromQuery] decimal maxPrice, [FromQuery] string author)
+        public IActionResult GetBooks ( [FromQuery] decimal peginationData, [FromQuery] string author)
         {
             //return Ok($"Book Id = {Id}");
-            return Ok($"Maximum Price = {maxPrice} : {author}");
+            return Ok($"Maximum Price = {peginationData} : {author}");
         }
         [HttpPost]
         public IActionResult AddBooks([FromBody] CreateBookRequestDto request)

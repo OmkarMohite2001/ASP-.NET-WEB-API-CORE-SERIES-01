@@ -8,12 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "maxPrice",
+        "Name": "peginationData",
         "Type": "System.Decimal",
         "IsRequired": false
       },

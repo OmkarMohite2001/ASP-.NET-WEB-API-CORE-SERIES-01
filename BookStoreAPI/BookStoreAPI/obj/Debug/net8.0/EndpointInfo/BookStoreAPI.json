@@ -12,16 +12,7 @@
         ],
         "parameters": [
           {
-            "name": "Id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "maxPrice",
+            "name": "peginationData",
             "in": "query",
             "schema": {
               "type": "number",
