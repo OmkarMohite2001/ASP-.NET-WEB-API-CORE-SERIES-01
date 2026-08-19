@@ -1,0 +1,170 @@
+[
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "AreAllStationsActive",
+    "RelativePath": "api/Customers/all-active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetAverageEnergy",
+    "RelativePath": "api/Customers/average-energy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetVehicleCount",
+    "RelativePath": "api/Customers/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetHighCapacityVehicleCount",
+    "RelativePath": "api/Customers/high-capacity-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetMaximumSessionAmount",
+    "RelativePath": "api/Customers/maximum-session-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetMinimumSessionAmount",
+    "RelativePath": "api/Customers/minimum-session-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetCustomersFromSelectedCities",
+    "RelativePath": "api/Customers/selected-cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "TeslaExists",
+    "RelativePath": "api/Customers/tesla-exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetTotalEnergy",
+    "RelativePath": "api/Customers/total-energy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehiclesByBrand",
+    "RelativePath": "api/Vehicles/by-brand/{brand}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brand",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetHighCapacityVehicles",
+    "RelativePath": "api/Vehicles/high-capacity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetPremiumTeslaVehicles",
+    "RelativePath": "api/Vehicles/premium-tesla",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehiclesByRegistrationSuffix",
+    "RelativePath": "api/Vehicles/registration-ends/{suffix}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "suffix",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehiclesByRegistrationPrefix",
+    "RelativePath": "api/Vehicles/registration-starts/{prefix}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prefix",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetTeslaORTataVehicles",
+    "RelativePath": "api/Vehicles/tesla-or-tata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
