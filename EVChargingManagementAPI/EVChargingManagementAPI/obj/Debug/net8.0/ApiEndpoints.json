@@ -1,7 +1,557 @@
 [
   {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetAllChargers",
+    "RelativePath": "api/Chargers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "CreateCharger",
+    "RelativePath": "api/Chargers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createChargerDto",
+        "Type": "EVChargingManagementAPI.DTOs.CreateChargerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetChargerById",
+    "RelativePath": "api/Chargers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "UpdateCharger",
+    "RelativePath": "api/Chargers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateChargerDto",
+        "Type": "EVChargingManagementAPI.DTOs.UpdateChargerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "DeleteCharger",
+    "RelativePath": "api/Chargers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetChargerWithSessions",
+    "RelativePath": "api/Chargers/{id}/sessions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetAvailableChargersByStation",
+    "RelativePath": "api/Chargers/available/by-station/{stationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetAvailableChargers",
+    "RelativePath": "api/Chargers/available/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetChargersByPower",
+    "RelativePath": "api/Chargers/by-power/{minPowerKW}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "minPowerKW",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetChargersByStation",
+    "RelativePath": "api/Chargers/by-station/{stationId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
+    "Method": "GetChargersByType",
+    "RelativePath": "api/Chargers/by-type/{chargerType}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chargerType",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetAllChargingSessions",
+    "RelativePath": "api/ChargingSessions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "CreateChargingSession",
+    "RelativePath": "api/ChargingSessions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createSessionDto",
+        "Type": "EVChargingManagementAPI.DTOs.CreateChargingSessionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetChargingSessionById",
+    "RelativePath": "api/ChargingSessions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "UpdateChargingSession",
+    "RelativePath": "api/ChargingSessions/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateSessionDto",
+        "Type": "EVChargingManagementAPI.DTOs.UpdateChargingSessionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "DeleteChargingSession",
+    "RelativePath": "api/ChargingSessions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetSessionWithDetails",
+    "RelativePath": "api/ChargingSessions/{id}/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetSessionsBetweenDates",
+    "RelativePath": "api/ChargingSessions/between-dates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetSessionsByCharger",
+    "RelativePath": "api/ChargingSessions/by-charger/{chargerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chargerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetSessionsByStatus",
+    "RelativePath": "api/ChargingSessions/by-status/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetSessionsByVehicle",
+    "RelativePath": "api/ChargingSessions/by-vehicle/{vehicleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehicleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetAllSessionsWithDetails",
+    "RelativePath": "api/ChargingSessions/list/with-details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetAverageAmount",
+    "RelativePath": "api/ChargingSessions/statistics/average-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetAverageEnergyConsumed",
+    "RelativePath": "api/ChargingSessions/statistics/average-energy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetMaximumAmount",
+    "RelativePath": "api/ChargingSessions/statistics/maximum-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetMinimumAmount",
+    "RelativePath": "api/ChargingSessions/statistics/minimum-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetTotalAmount",
+    "RelativePath": "api/ChargingSessions/statistics/total-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingSessionsController",
+    "Method": "GetTotalEnergyConsumed",
+    "RelativePath": "api/ChargingSessions/statistics/total-energy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetAllChargingStations",
+    "RelativePath": "api/ChargingStations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "CreateChargingStation",
+    "RelativePath": "api/ChargingStations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStationDto",
+        "Type": "EVChargingManagementAPI.DTOs.CreateChargingStationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetChargingStationById",
+    "RelativePath": "api/ChargingStations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "UpdateChargingStation",
+    "RelativePath": "api/ChargingStations/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateStationDto",
+        "Type": "EVChargingManagementAPI.DTOs.UpdateChargingStationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "DeleteChargingStation",
+    "RelativePath": "api/ChargingStations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetStationWithChargers",
+    "RelativePath": "api/ChargingStations/{id}/chargers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetActiveStationsByCity",
+    "RelativePath": "api/ChargingStations/active-by-city/{city}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetActiveStations",
+    "RelativePath": "api/ChargingStations/active/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "AreAllStationsActive",
+    "RelativePath": "api/ChargingStations/all-active-check",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.ChargingStationsController",
+    "Method": "GetStationsByCity",
+    "RelativePath": "api/ChargingStations/by-city/{city}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetCustomer",
+    "Method": "GetAllCustomers",
     "RelativePath": "api/Customers",
     "HttpMethod": "GET",
     "IsController": true,
@@ -11,58 +561,93 @@
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "AreAllStationsActive",
-    "RelativePath": "api/Customers/all-active",
-    "HttpMethod": "GET",
+    "Method": "CreateCustomer",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "createCustomerDto",
+        "Type": "EVChargingManagementAPI.DTOs.CreateCustomerDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetAverageEnergy",
-    "RelativePath": "api/Customers/average-energy",
+    "Method": "GetCustomerById",
+    "RelativePath": "api/Customers/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetVehicleCount",
-    "RelativePath": "api/Customers/count",
-    "HttpMethod": "GET",
+    "Method": "UpdateCustomer",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateCustomerDto",
+        "Type": "EVChargingManagementAPI.DTOs.UpdateCustomerDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetHighCapacityVehicleCount",
-    "RelativePath": "api/Customers/high-capacity-count",
-    "HttpMethod": "GET",
+    "Method": "DeleteCustomer",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetMaximumSessionAmount",
-    "RelativePath": "api/Customers/maximum-session-amount",
+    "Method": "GetCustomerWithVehicles",
+    "RelativePath": "api/Customers/{id}/vehicles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "GetMinimumSessionAmount",
-    "RelativePath": "api/Customers/minimum-session-amount",
+    "Method": "GetActiveCustomers",
+    "RelativePath": "api/Customers/active/list",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -81,8 +666,38 @@
   },
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
-    "Method": "TeslaExists",
-    "RelativePath": "api/Customers/tesla-exists",
+    "Method": "GetAverageEnergy",
+    "RelativePath": "api/Customers/statistics/average-energy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetHighCapacityVehicleCount",
+    "RelativePath": "api/Customers/statistics/high-capacity-vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetMaximumSessionAmount",
+    "RelativePath": "api/Customers/statistics/maximum-session-amount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetMinimumSessionAmount",
+    "RelativePath": "api/Customers/statistics/minimum-session-amount",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -92,11 +707,126 @@
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
     "Method": "GetTotalEnergy",
-    "RelativePath": "api/Customers/total-energy",
+    "RelativePath": "api/Customers/statistics/total-energy",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetVehicleCount",
+    "RelativePath": "api/Customers/statistics/total-vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "TeslaExists",
+    "RelativePath": "api/Customers/tesla-exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetAllVehicles",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "CreateVehicle",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createVehicleDto",
+        "Type": "EVChargingManagementAPI.DTOs.CreateVehicleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehicleById",
+    "RelativePath": "api/Vehicles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "UpdateVehicle",
+    "RelativePath": "api/Vehicles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateVehicleDto",
+        "Type": "EVChargingManagementAPI.DTOs.UpdateVehicleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "DeleteVehicle",
+    "RelativePath": "api/Vehicles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehicleWithSessions",
+    "RelativePath": "api/Vehicles/{id}/sessions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -110,6 +840,22 @@
       {
         "Name": "brand",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.VehiclesController",
+    "Method": "GetVehiclesByCustomer",
+    "RelativePath": "api/Vehicles/by-customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -1,8 +1,7 @@
-﻿using EVChargingManagementAPI.Data;
+using EVChargingManagementAPI.DTOs;
+using EVChargingManagementAPI.Models;
 using EVChargingManagementAPI.Repositories.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace EVChargingManagementAPI.Controllers
 {
@@ -10,21 +9,185 @@ namespace EVChargingManagementAPI.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly AppDbContext _context;
         private readonly ICustomerRepository _customerRepository;
+        private readonly IChargingSessionRepository _chargingSessionRepository;
 
-        public CustomersController(AppDbContext context,ICustomerRepository repository)
+        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository)
         {
-            _context = context;
-            _customerRepository = repository;
+            _customerRepository = customerRepository;
+            _chargingSessionRepository = chargingSessionRepository;
         }
+
+        // CRUD Operations
+        [HttpGet]
+        public async Task<IActionResult> GetAllCustomers()
+        {
+            var customers = await _customerRepository.GetAllAsync();
+            var customerDtos = customers.Select(c => new CustomerResponseDto
+            {
+                Id = c.Id,
+                FullName = c.FullName,
+                Email = c.Email,
+                City = c.City,
+                IsActive = c.IsActive
+            }).ToList();
+
+            return Ok(customerDtos);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCustomerById(int id)
+        {
+            var customer = await _customerRepository.GetByIdAsync(id);
+            if (customer == null)
+                return NotFound(new { message = "Customer not found" });
+
+            var customerDto = new CustomerResponseDto
+            {
+                Id = customer.Id,
+                FullName = customer.FullName,
+                Email = customer.Email,
+                City = customer.City,
+                IsActive = customer.IsActive
+            };
+
+            return Ok(customerDto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer([FromBody] CreateCustomerDto createCustomerDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var customer = new Customer
+            {
+                FullName = createCustomerDto.FullName,
+                Email = createCustomerDto.Email,
+                City = createCustomerDto.City,
+                IsActive = createCustomerDto.IsActive
+            };
+
+            await _customerRepository.AddAsync(customer);
+
+            var customerDto = new CustomerResponseDto
+            {
+                Id = customer.Id,
+                FullName = customer.FullName,
+                Email = customer.Email,
+                City = customer.City,
+                IsActive = customer.IsActive
+            };
+
+            return CreatedAtAction(nameof(GetCustomerById), new { id = customer.Id }, customerDto);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCustomer(int id, [FromBody] UpdateCustomerDto updateCustomerDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var customer = await _customerRepository.GetByIdAsync(id);
+            if (customer == null)
+                return NotFound(new { message = "Customer not found" });
+
+            customer.FullName = updateCustomerDto.FullName;
+            customer.Email = updateCustomerDto.Email;
+            customer.City = updateCustomerDto.City;
+            customer.IsActive = updateCustomerDto.IsActive;
+
+            _customerRepository.Update(customer);
+            await _customerRepository.SaveAsync();
+
+            var customerDto = new CustomerResponseDto
+            {
+                Id = customer.Id,
+                FullName = customer.FullName,
+                Email = customer.Email,
+                City = customer.City,
+                IsActive = customer.IsActive
+            };
+
+            return Ok(customerDto);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCustomer(int id)
+        {
+            var customer = await _customerRepository.GetByIdAsync(id);
+            if (customer == null)
+                return NotFound(new { message = "Customer not found" });
+
+            _customerRepository.Delete(customer);
+            await _customerRepository.SaveAsync();
+
+            return NoContent();
+        }
+
+        // Advanced queries
+        [HttpGet("{id}/vehicles")]
+        public async Task<IActionResult> GetCustomerWithVehicles(int id)
+        {
+            var customer = await _customerRepository.GetCustomerWithVehiclesAsync(id);
+            if (customer == null)
+                return NotFound(new { message = "Customer not found" });
+
+            var vehicleDtos = customer.Vehicles?.Select(v => new VehicleResponseDto
+            {
+                Id = v.Id,
+                RegistrationNumber = v.RegistrationNumber,
+                Brand = v.Brand,
+                Model = v.Model,
+                BatteryCapacityKWh = v.BatteryCapacityKWh,
+                CustomerId = v.CustomerId
+            }).ToList() ?? new List<VehicleResponseDto>();
+
+            var customerDto = new CustomerWithVehiclesDto
+            {
+                Id = customer.Id,
+                FullName = customer.FullName,
+                Email = customer.Email,
+                City = customer.City,
+                IsActive = customer.IsActive,
+                Vehicles = vehicleDtos
+            };
+
+            return Ok(customerDto);
+        }
+
+        [HttpGet("active/list")]
+        public async Task<IActionResult> GetActiveCustomers()
+        {
+            var customers = await _customerRepository.GetActiveCustomersAsync();
+            var customerDtos = customers.Select(c => new CustomerResponseDto
+            {
+                Id = c.Id,
+                FullName = c.FullName,
+                Email = c.Email,
+                City = c.City,
+                IsActive = c.IsActive
+            }).ToList();
+
+            return Ok(customerDtos);
+        }
+
         [HttpGet("selected-cities")]
-        public async Task<IActionResult>GetCustomersFromSelectedCities()
+        public async Task<IActionResult> GetCustomersFromSelectedCities()
         {
-           var customers = await _customerRepository.GetCustomersFromSelectedCitiesRepo();
+            var customers = await _customerRepository.GetCustomersFromSelectedCitiesRepo();
+            var customerDtos = customers.Select(c => new CustomerResponseDto
+            {
+                Id = c.Id,
+                FullName = c.FullName,
+                Email = c.Email,
+                City = c.City,
+                IsActive = c.IsActive
+            }).ToList();
 
-            return Ok(customers);
+            return Ok(customerDtos);
         }
+
         [HttpGet("tesla-exists")]
         public async Task<IActionResult> TeslaExists()
         {
@@ -32,99 +195,78 @@ namespace EVChargingManagementAPI.Controllers
 
             return Ok(new
             {
-                exists
+                teslaExists = exists
             });
         }
-        [HttpGet("all-active")]
-        public async Task<IActionResult> AreAllStationsActive()
-        {
-            var result = await _context.ChargingStations
-                .AllAsync(s => s.IsActive);
 
-            return Ok(new
-            {
-                allStationsActive = result
-            });
-        }
-        [HttpGet("count")]
+        [HttpGet("statistics/total-vehicles")]
         public async Task<IActionResult> GetVehicleCount()
         {
-            var count = await _context.Vehicles
-                .CountAsync();
+            var customers = await _customerRepository.GetAllAsync();
+            var totalVehicles = customers.Sum(c => c.Vehicles?.Count ?? 0);
 
             return Ok(new
             {
-                totalVehicles = count
+                totalVehicles = totalVehicles
             });
         }
-        [HttpGet("high-capacity-count")]
+
+        [HttpGet("statistics/high-capacity-vehicles")]
         public async Task<IActionResult> GetHighCapacityVehicleCount()
         {
-            var count = await _context.Vehicles
-                .CountAsync(v =>
-                    v.BatteryCapacityKWh > 60);
+            var customers = await _customerRepository.GetAllAsync();
+            var highCapacityCount = customers
+                .SelectMany(c => c.Vehicles ?? new List<Vehicle>())
+                .Count(v => v.BatteryCapacityKWh > 60);
 
             return Ok(new
             {
-                highCapacityVehicles = count
+                highCapacityVehicles = highCapacityCount
             });
         }
-        [HttpGet("total-energy")]
+
+        [HttpGet("statistics/total-energy")]
         public async Task<IActionResult> GetTotalEnergy()
         {
-            var totalEnergy =
-                await _context.ChargingSessions
-                .SumAsync(s => s.EnergyConsumedKWh);
+            var totalEnergy = await _chargingSessionRepository.GetTotalEnergyConsumedAsync();
 
             return Ok(new
             {
-                totalEnergy
+                totalEnergy = totalEnergy
             });
         }
-        [HttpGet("average-energy")]
+
+        [HttpGet("statistics/average-energy")]
         public async Task<IActionResult> GetAverageEnergy()
         {
-            var average =
-                await _context.ChargingSessions
-                .AverageAsync(s =>
-                    s.EnergyConsumedKWh);
+            var average = await _chargingSessionRepository.GetAverageEnergyConsumedAsync();
 
             return Ok(new
             {
                 averageEnergy = average
             });
         }
-        [HttpGet("minimum-session-amount")]
-        public async Task<IActionResult>
-    GetMinimumSessionAmount()
+
+        [HttpGet("statistics/minimum-session-amount")]
+        public async Task<IActionResult> GetMinimumSessionAmount()
         {
-            var minimum =
-                await _context.ChargingSessions
-                .MinAsync(s => s.Amount);
+            var minimum = await _chargingSessionRepository.GetMinimumAmountAsync();
 
             return Ok(new
             {
                 minimumAmount = minimum
             });
         }
-        [HttpGet("maximum-session-amount")]
-        public async Task<IActionResult>
-    GetMaximumSessionAmount()
+
+        [HttpGet("statistics/maximum-session-amount")]
+        public async Task<IActionResult> GetMaximumSessionAmount()
         {
-            var maximum =
-                await _context.ChargingSessions
-                .MaxAsync(s => s.Amount);
+            var maximum = await _chargingSessionRepository.GetMaximumAmountAsync();
 
             return Ok(new
             {
                 maximumAmount = maximum
             });
-        }
-        [HttpGet]
-        public async Task<IActionResult> GetCustomer()
-        {
-            var customers = await _customerRepository.GetAllAsync();
-            return Ok(customers);
         }
     }
 }
