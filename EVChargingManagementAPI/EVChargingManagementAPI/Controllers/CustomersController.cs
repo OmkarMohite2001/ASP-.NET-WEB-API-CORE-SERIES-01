@@ -1,4 +1,5 @@
 ﻿using EVChargingManagementAPI.Data;
+using EVChargingManagementAPI.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,32 +11,24 @@ namespace EVChargingManagementAPI.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly ICustomerRepository _customerRepository;
 
-        public CustomersController(AppDbContext context)
+        public CustomersController(AppDbContext context,ICustomerRepository repository)
         {
             _context = context;
+            _customerRepository = repository;
         }
         [HttpGet("selected-cities")]
         public async Task<IActionResult>GetCustomersFromSelectedCities()
         {
-            var cities = new List<string>
-            {
-                "Pune",
-                "Mumbai",
-                "Nashik"
-            };
-
-            var customers = await _context.Customers
-                .Where(c => cities.Contains(c.City))
-                .ToListAsync();
+           var customers = await _customerRepository.GetCustomersFromSelectedCitiesRepo();
 
             return Ok(customers);
         }
         [HttpGet("tesla-exists")]
         public async Task<IActionResult> TeslaExists()
         {
-            var exists = await _context.Vehicles
-                .AnyAsync(v => v.Brand == "Tasla");
+            var exists = await _customerRepository.AreAllStationPresents();
 
             return Ok(new
             {
@@ -126,6 +119,12 @@ namespace EVChargingManagementAPI.Controllers
             {
                 maximumAmount = maximum
             });
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetCustomer()
+        {
+            var customers = await _customerRepository.GetAllAsync();
+            return Ok(customers);
         }
     }
 }

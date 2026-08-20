@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "GetCustomer",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
     "Method": "AreAllStationsActive",
     "RelativePath": "api/Customers/all-active",
     "HttpMethod": "GET",

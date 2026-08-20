@@ -113,6 +113,18 @@
         }
       }
     },
+    "/api/Customers": {
+      "get": {
+        "tags": [
+          "Customers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Vehicles/high-capacity": {
       "get": {
         "tags": [
