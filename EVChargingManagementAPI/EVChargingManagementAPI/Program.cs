@@ -1,7 +1,9 @@
 using EVChargingManagementAPI.Data;
+using EVChargingManagementAPI.Mapping;
 using EVChargingManagementAPI.Repositories;
 using EVChargingManagementAPI.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,10 @@ builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddScoped<IChargingStationRepository, ChargingStationRepository>();
 builder.Services.AddScoped<IChargerRepository, ChargerRepository>();
 builder.Services.AddScoped<IChargingSessionRepository, ChargingSessionRepository>();
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(typeof(CustomerProfile).Assembly);
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

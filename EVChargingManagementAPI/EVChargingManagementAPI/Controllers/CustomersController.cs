@@ -1,3 +1,4 @@
+using AutoMapper;
 using EVChargingManagementAPI.DTOs;
 using EVChargingManagementAPI.Models;
 using EVChargingManagementAPI.Repositories.Interfaces;
@@ -11,11 +12,12 @@ namespace EVChargingManagementAPI.Controllers
     {
         private readonly ICustomerRepository _customerRepository;
         private readonly IChargingSessionRepository _chargingSessionRepository;
-
-        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository)
+        private readonly IMapper _mapper;
+        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository,IMapper mapper)
         {
             _customerRepository = customerRepository;
             _chargingSessionRepository = chargingSessionRepository;
+            _mapper = mapper;
         }
 
         // CRUD Operations
@@ -23,14 +25,7 @@ namespace EVChargingManagementAPI.Controllers
         public async Task<IActionResult> GetAllCustomers()
         {
             var customers = await _customerRepository.GetAllAsync();
-            var customerDtos = customers.Select(c => new CustomerResponseDto
-            {
-                Id = c.Id,
-                FullName = c.FullName,
-                Email = c.Email,
-                City = c.City,
-                IsActive = c.IsActive
-            }).ToList();
+            var customerDtos = _mapper.Map<List<CustomerResponseDto>>(customers);
 
             return Ok(customerDtos);
         }
@@ -41,15 +36,7 @@ namespace EVChargingManagementAPI.Controllers
             var customer = await _customerRepository.GetByIdAsync(id);
             if (customer == null)
                 return NotFound(new { message = "Customer not found" });
-
-            var customerDto = new CustomerResponseDto
-            {
-                Id = customer.Id,
-                FullName = customer.FullName,
-                Email = customer.Email,
-                City = customer.City,
-                IsActive = customer.IsActive
-            };
+            var customerDto = _mapper.Map<CustomerResponseDto>(customer);
 
             return Ok(customerDto);
         }
@@ -59,25 +46,10 @@ namespace EVChargingManagementAPI.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
-            var customer = new Customer
-            {
-                FullName = createCustomerDto.FullName,
-                Email = createCustomerDto.Email,
-                City = createCustomerDto.City,
-                IsActive = createCustomerDto.IsActive
-            };
+            var customer = _mapper.Map<Customer>(createCustomerDto);
 
             await _customerRepository.AddAsync(customer);
-
-            var customerDto = new CustomerResponseDto
-            {
-                Id = customer.Id,
-                FullName = customer.FullName,
-                Email = customer.Email,
-                City = customer.City,
-                IsActive = customer.IsActive
-            };
+            var customerDto = _mapper.Map<CustomerResponseDto>(customer);
 
             return CreatedAtAction(nameof(GetCustomerById), new { id = customer.Id }, customerDto);
         }
@@ -91,23 +63,12 @@ namespace EVChargingManagementAPI.Controllers
             var customer = await _customerRepository.GetByIdAsync(id);
             if (customer == null)
                 return NotFound(new { message = "Customer not found" });
-
-            customer.FullName = updateCustomerDto.FullName;
-            customer.Email = updateCustomerDto.Email;
-            customer.City = updateCustomerDto.City;
-            customer.IsActive = updateCustomerDto.IsActive;
+            _mapper.Map(updateCustomerDto,customer);
 
             _customerRepository.Update(customer);
             await _customerRepository.SaveAsync();
 
-            var customerDto = new CustomerResponseDto
-            {
-                Id = customer.Id,
-                FullName = customer.FullName,
-                Email = customer.Email,
-                City = customer.City,
-                IsActive = customer.IsActive
-            };
+            var customerDto = _mapper.Map<CustomerResponseDto>(customer);
 
             return Ok(customerDto);
         }
