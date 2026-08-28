@@ -148,3 +148,5 @@ D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\AutoMapper.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\BCrypt-Net-Next.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "EVChargingManagementAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "EVChargingManagementAPI.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "EVChargingManagementAPI.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EVChargingManagementAPI.Controllers.ChargersController",
     "Method": "GetAllChargers",
     "RelativePath": "api/Chargers",
@@ -728,6 +760,16 @@
     "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
     "Method": "TeslaExists",
     "RelativePath": "api/Customers/tesla-exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVChargingManagementAPI.Controllers.CustomersController",
+    "Method": "TestException",
+    "RelativePath": "api/Customers/test-exception",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

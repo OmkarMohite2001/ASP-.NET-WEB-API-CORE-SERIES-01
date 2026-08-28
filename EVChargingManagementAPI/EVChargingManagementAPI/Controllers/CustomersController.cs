@@ -2,10 +2,12 @@ using AutoMapper;
 using EVChargingManagementAPI.DTOs;
 using EVChargingManagementAPI.Models;
 using EVChargingManagementAPI.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EVChargingManagementAPI.Controllers
 {
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase
@@ -31,6 +33,7 @@ namespace EVChargingManagementAPI.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetCustomerById(int id)
         {
             var customer = await _customerRepository.GetByIdAsync(id);
@@ -228,6 +231,11 @@ namespace EVChargingManagementAPI.Controllers
             {
                 maximumAmount = maximum
             });
+        }
+        [HttpGet("test-exception")]
+        public IActionResult TestException()
+        {
+            throw new Exception("Testing Global Exception Handling");
         }
     }
 }
