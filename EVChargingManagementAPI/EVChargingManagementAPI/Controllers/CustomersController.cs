@@ -4,30 +4,63 @@ using EVChargingManagementAPI.Models;
 using EVChargingManagementAPI.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace EVChargingManagementAPI.Controllers
 {
     //[Authorize]
     [Route("api/[controller]")]
+    [EnableRateLimiting("fixed")]
     [ApiController]
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerRepository _customerRepository;
         private readonly IChargingSessionRepository _chargingSessionRepository;
         private readonly IMapper _mapper;
-        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository,IMapper mapper)
+        private readonly IMemoryCache _cache;
+        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository,IMapper mapper,IMemoryCache cache)
         {
             _customerRepository = customerRepository;
             _chargingSessionRepository = chargingSessionRepository;
             _mapper = mapper;
+            _cache = cache;
         }
 
         // CRUD Operations
+        //[HttpGet]
+        //public async Task<IActionResult> GetAllCustomers()
+        //{
+        //    var customers = await _customerRepository.GetAllAsync();
+        //    var customerDtos = _mapper.Map<List<CustomerResponseDto>>(customers);
+
+        //    return Ok(customerDtos);
+        //}
+
         [HttpGet]
         public async Task<IActionResult> GetAllCustomers()
         {
-            var customers = await _customerRepository.GetAllAsync();
-            var customerDtos = _mapper.Map<List<CustomerResponseDto>>(customers);
+            const string cacheKey = "all-customers";
+            if (!_cache.TryGetValue(cacheKey, out List<CustomerResponseDto>? customerDtos))
+            {
+                var customers = await _customerRepository.GetAllAsync();
+
+                customerDtos = customers.Select(c => new CustomerResponseDto
+                {
+                    Id = c.Id,
+                    FullName = c.FullName,
+                    Email = c.Email,
+                    City = c.City,
+                    IsActive = c.IsActive
+                }).ToList();
+
+                var cacheOptions = new MemoryCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                };
+
+                _cache.Set(cacheKey, customerDtos, cacheOptions);
+            }
 
             return Ok(customerDtos);
         }
@@ -78,6 +111,7 @@ namespace EVChargingManagementAPI.Controllers
             var customer = _mapper.Map<Customer>(createCustomerDto);
 
             await _customerRepository.AddAsync(customer);
+            _cache.Remove("all-customers");
             var customerDto = _mapper.Map<CustomerResponseDto>(customer);
 
             return CreatedAtAction(nameof(GetCustomerById), new { id = customer.Id }, customerDto);

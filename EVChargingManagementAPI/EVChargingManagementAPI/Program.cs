@@ -8,6 +8,7 @@ using EVChargingManagementAPI.Repositories;
 using EVChargingManagementAPI.Repositories.Interfaces;
 using EVChargingManagementAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -17,7 +18,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddHealthChecks().
+    AddDbContextCheck<AppDbContext>();
 builder.Services.AddControllers();
+builder.Services.AddMemoryCache();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
@@ -31,6 +35,15 @@ builder.Services.AddScoped<IChargerRepository, ChargerRepository>();
 builder.Services.AddScoped<IChargingSessionRepository, ChargingSessionRepository>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddHostedService<ChargingSessionBackgroundService>();
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("fixed", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 10;
+        limiterOptions.Window = TimeSpan.FromMinutes(1);
+        limiterOptions.QueueLimit = 0;
+    });
+});
 builder.Services.AddAutoMapper(cfg =>
 {
     cfg.AddMaps(typeof(CustomerProfile).Assembly);
@@ -112,9 +125,11 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<GlobalExceptionHandler>();
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
+app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
+app.MapHealthChecks("/health");
 
 app.Run();
