@@ -211,6 +211,39 @@ namespace EVChargingManagementAPI.Migrations
                     b.ToTable("Vehicles");
                 });
 
+            modelBuilder.Entity("EVChargingManagementAPI.Models.VehicleDocument", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UploadedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("VehicleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VehicleId");
+
+                    b.ToTable("VehicleDocuments");
+                });
+
             modelBuilder.Entity("EVChargingManagementAPI.Models.Charger", b =>
                 {
                     b.HasOne("EVChargingManagementAPI.Models.ChargingStation", "ChargingStation")
@@ -252,6 +285,17 @@ namespace EVChargingManagementAPI.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("EVChargingManagementAPI.Models.VehicleDocument", b =>
+                {
+                    b.HasOne("EVChargingManagementAPI.Models.Vehicle", "Vehicle")
+                        .WithMany("Documents")
+                        .HasForeignKey("VehicleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Vehicle");
+                });
+
             modelBuilder.Entity("EVChargingManagementAPI.Models.Charger", b =>
                 {
                     b.Navigation("ChargingSessions");
@@ -270,6 +314,8 @@ namespace EVChargingManagementAPI.Migrations
             modelBuilder.Entity("EVChargingManagementAPI.Models.Vehicle", b =>
                 {
                     b.Navigation("ChargingSessions");
+
+                    b.Navigation("Documents");
                 });
 #pragma warning restore 612, 618
         }

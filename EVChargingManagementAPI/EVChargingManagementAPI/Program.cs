@@ -1,10 +1,12 @@
 using EVChargingManagementAPI.Data;
+using EVChargingManagementAPI.DTOs;
 using EVChargingManagementAPI.Exceptions;
 using EVChargingManagementAPI.Filters;
 using EVChargingManagementAPI.Mapping;
 using EVChargingManagementAPI.Middleware;
 using EVChargingManagementAPI.Repositories;
 using EVChargingManagementAPI.Repositories.Interfaces;
+using EVChargingManagementAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +19,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 builder.Services.AddControllers(options =>
 options.Filters.Add<ApiLoggingFilter>());
 // Register repositories
@@ -25,6 +29,8 @@ builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddScoped<IChargingStationRepository, ChargingStationRepository>();
 builder.Services.AddScoped<IChargerRepository, ChargerRepository>();
 builder.Services.AddScoped<IChargingSessionRepository, ChargingSessionRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddHostedService<ChargingSessionBackgroundService>();
 builder.Services.AddAutoMapper(cfg =>
 {
     cfg.AddMaps(typeof(CustomerProfile).Assembly);
@@ -108,7 +114,7 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles();
 app.MapControllers();
 
 app.Run();

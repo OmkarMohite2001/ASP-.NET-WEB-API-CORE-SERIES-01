@@ -150,3 +150,9 @@ D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\BCrypt-Net-Next.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\EVChargingManagementAPI.staticwebassets.runtime.json
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\MailKit.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\MimeKit.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

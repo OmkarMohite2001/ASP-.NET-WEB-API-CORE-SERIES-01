@@ -31,6 +31,32 @@ namespace EVChargingManagementAPI.Controllers
 
             return Ok(customerDtos);
         }
+        //Module 44
+        [HttpGet("Module44")]
+        public  async Task<IActionResult> GetAllPageCustomers([FromQuery] CustomerQueryDto query)
+        {
+            var result = await _customerRepository.GetCustomersAsync(query);
+            var customerDtos = result.customers
+                .Select(c=>new CustomerResponseDto
+                {
+                    Id = c.Id,
+                    FullName = c.FullName,
+                    Email = c.Email,
+                    City = c.City,
+                    IsActive = c.IsActive
+                })
+                .ToList();
+            var totalPages = (int)Math.Ceiling(result.TotalRecords/(double)query.PageSize);
+            var response = new PageResponseDto<CustomerResponseDto>
+            {
+                PageNumber = query.PageNumber,
+                PageSize = query.PageSize,
+                TotalRecords = result.TotalRecords,
+                TotalPages = totalPages,
+                Data = customerDtos
+            };
+            return Ok(response);
+        }
 
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin")]

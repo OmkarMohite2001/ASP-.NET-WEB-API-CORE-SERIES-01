@@ -20,7 +20,7 @@ namespace EVChargingManagementAPI.Data
         public DbSet<ChargingSession> ChargingSessions { get; set; }
 
         public DbSet<User> Users { get; set; }
-
+        public DbSet<VehicleDocument> VehicleDocuments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ChargingStation>()
@@ -45,6 +45,11 @@ namespace EVChargingManagementAPI.Data
                 .HasMany(c => c.ChargingSessions)
                 .WithOne(s => s.Charger)
                 .HasForeignKey(s => s.ChargerId);
+
+            modelBuilder.Entity<VehicleDocument>()
+                .HasOne(d=>d.Vehicle)
+                .WithMany(v=>v.Documents)
+                .HasForeignKey(d=>d.VehicleId);
         }
     }
 }

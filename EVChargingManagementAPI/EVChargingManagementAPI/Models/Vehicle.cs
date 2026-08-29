@@ -17,5 +17,6 @@
         public Customer? Customer { get; set; }
 
         public ICollection<ChargingSession>? ChargingSessions { get; set; } = new List<ChargingSession>();
+        public ICollection<VehicleDocument> Documents { get; set; } = new List<VehicleDocument>();
     }
 }

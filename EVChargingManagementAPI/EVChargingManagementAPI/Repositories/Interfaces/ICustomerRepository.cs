@@ -1,4 +1,5 @@
-﻿using EVChargingManagementAPI.Models;
+﻿using EVChargingManagementAPI.DTOs;
+using EVChargingManagementAPI.Models;
 
 namespace EVChargingManagementAPI.Repositories.Interfaces
 {
@@ -8,5 +9,6 @@ namespace EVChargingManagementAPI.Repositories.Interfaces
         Task<bool> AreAllStationPresents();
         Task<Customer?> GetCustomerWithVehiclesAsync(int id);
         Task<List<Customer>> GetActiveCustomersAsync();
+        Task<(List<Customer> customers, int TotalRecords)> GetCustomersAsync(CustomerQueryDto query);
     }
 }
