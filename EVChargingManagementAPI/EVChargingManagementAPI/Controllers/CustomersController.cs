@@ -19,12 +19,14 @@ namespace EVChargingManagementAPI.Controllers
         private readonly IChargingSessionRepository _chargingSessionRepository;
         private readonly IMapper _mapper;
         private readonly IMemoryCache _cache;
-        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository,IMapper mapper,IMemoryCache cache)
+        private readonly ILogger _logger;
+        public CustomersController(ICustomerRepository customerRepository, IChargingSessionRepository chargingSessionRepository,IMapper mapper,IMemoryCache cache,ILogger<CustomersController> logger)
         {
             _customerRepository = customerRepository;
             _chargingSessionRepository = chargingSessionRepository;
             _mapper = mapper;
             _cache = cache;
+            _logger = logger;
         }
 
         // CRUD Operations
@@ -40,11 +42,12 @@ namespace EVChargingManagementAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCustomers()
         {
+            _logger.LogInformation("Get All Customers Api Calles");
             const string cacheKey = "all-customers";
             if (!_cache.TryGetValue(cacheKey, out List<CustomerResponseDto>? customerDtos))
             {
                 var customers = await _customerRepository.GetAllAsync();
-
+                //_logger.LogError(ex, "Error Occured While Database connection");
                 customerDtos = customers.Select(c => new CustomerResponseDto
                 {
                     Id = c.Id,
@@ -58,10 +61,10 @@ namespace EVChargingManagementAPI.Controllers
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
                 };
-
                 _cache.Set(cacheKey, customerDtos, cacheOptions);
             }
 
+                _logger.LogInformation("Retrived {Count}",customerDtos.Count);
             return Ok(customerDtos);
         }
         //Module 44
