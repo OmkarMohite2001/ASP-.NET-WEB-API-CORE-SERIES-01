@@ -1,0 +1,140 @@
+2026-08-30 17:38:00.403 +05:30 [INF] User profile is available. Using 'C:\Users\Omkar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-30 17:38:01.229 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'ChargingSession'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-08-30 17:38:03.322 +05:30 [INF] Now listening on: https://localhost:7120
+2026-08-30 17:38:03.325 +05:30 [INF] Now listening on: http://localhost:5275
+2026-08-30 17:38:03.342 +05:30 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:38:03.401 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-30 17:38:03.403 +05:30 [INF] Hosting environment: Development
+2026-08-30 17:38:03.405 +05:30 [INF] Content root path: D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI
+2026-08-30 17:38:03.451 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:38:04.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/index.html - null null
+2026-08-30 17:38:04.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/index.html - 200 null text/html;charset=utf-8 499.376ms
+2026-08-30 17:38:04.866 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-30 17:38:04.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_framework/aspnetcore-browser-refresh.js - 200 16531 application/javascript; charset=utf-8 16.9468ms
+2026-08-30 17:38:04.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/_vs/browserLink - null null
+2026-08-30 17:38:05.020 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.1036ms
+2026-08-30 17:38:05.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - null null
+2026-08-30 17:38:05.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - null null
+2026-08-30 17:38:05.164 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-08-30 17:38:05.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/favicon-32x32.png - 200 628 image/png 71.4425ms
+2026-08-30 17:38:05.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.3428ms
+2026-08-30 17:38:11.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/api/Chargers - null null
+2026-08-30 17:38:11.308 +05:30 [INF] Request Started : GET /api/Chargers
+2026-08-30 17:38:13.824 +05:30 [INF] Executing endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:38:13.893 +05:30 [INF] Route matched with {action = "GetAllChargers", controller = "Chargers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllChargers() on controller EVChargingManagementAPI.Controllers.ChargersController (EVChargingManagementAPI).
+2026-08-30 17:38:13.936 +05:30 [INF] API Execution Startes: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:38:13.972 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChargerCode], [c].[ChargerType], [c].[ChargingStationId], [c].[IsAvailable], [c].[PowerKW]
+FROM [Chargers] AS [c]
+2026-08-30 17:38:14.024 +05:30 [INF] API Execution Completed: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:38:14.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EVChargingManagementAPI.DTOs.ChargerResponseDto, EVChargingManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-30 17:38:14.079 +05:30 [INF] Executed action EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI) in 164.6174ms
+2026-08-30 17:38:14.102 +05:30 [INF] Executed endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:38:14.109 +05:30 [INF] Request Completed : 200 2805.1033
+2026-08-30 17:38:14.123 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/api/Chargers - 200 null application/json; charset=utf-8 2829.9369ms
+2026-08-30 17:38:33.591 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:38:33.600 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:39:03.622 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:39:03.632 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:39:33.649 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:39:33.655 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:40:01.865 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/api/Chargers - null null
+2026-08-30 17:40:01.874 +05:30 [INF] Request Started : GET /api/Chargers
+2026-08-30 17:40:01.893 +05:30 [INF] Executing endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:40:01.901 +05:30 [INF] Route matched with {action = "GetAllChargers", controller = "Chargers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllChargers() on controller EVChargingManagementAPI.Controllers.ChargersController (EVChargingManagementAPI).
+2026-08-30 17:40:01.912 +05:30 [INF] API Execution Startes: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:40:01.925 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChargerCode], [c].[ChargerType], [c].[ChargingStationId], [c].[IsAvailable], [c].[PowerKW]
+FROM [Chargers] AS [c]
+2026-08-30 17:40:01.929 +05:30 [INF] API Execution Completed: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:40:01.933 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EVChargingManagementAPI.DTOs.ChargerResponseDto, EVChargingManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-30 17:40:01.936 +05:30 [INF] Executed action EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI) in 27.1454ms
+2026-08-30 17:40:01.939 +05:30 [INF] Executed endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:40:01.942 +05:30 [INF] Request Completed : 200 68.0707
+2026-08-30 17:40:01.944 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/api/Chargers - 200 null application/json; charset=utf-8 79.2051ms
+2026-08-30 17:40:03.673 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:40:03.681 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:40:12.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/api/Chargers - null null
+2026-08-30 17:40:13.020 +05:30 [INF] Request Started : GET /api/Chargers
+2026-08-30 17:40:13.027 +05:30 [INF] Executing endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:40:13.030 +05:30 [INF] Route matched with {action = "GetAllChargers", controller = "Chargers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllChargers() on controller EVChargingManagementAPI.Controllers.ChargersController (EVChargingManagementAPI).
+2026-08-30 17:40:13.036 +05:30 [INF] API Execution Startes: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:40:13.043 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChargerCode], [c].[ChargerType], [c].[ChargingStationId], [c].[IsAvailable], [c].[PowerKW]
+FROM [Chargers] AS [c]
+2026-08-30 17:40:13.047 +05:30 [INF] API Execution Completed: ChargersController.EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)
+2026-08-30 17:40:13.050 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EVChargingManagementAPI.DTOs.ChargerResponseDto, EVChargingManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-30 17:40:13.052 +05:30 [INF] Executed action EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI) in 18.9526ms
+2026-08-30 17:40:13.054 +05:30 [INF] Executed endpoint 'EVChargingManagementAPI.Controllers.ChargersController.GetAllChargers (EVChargingManagementAPI)'
+2026-08-30 17:40:13.056 +05:30 [INF] Request Completed : 200 35.5623
+2026-08-30 17:40:13.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/api/Chargers - 200 null application/json; charset=utf-8 66.8516ms
+2026-08-30 17:40:13.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7120/favicon.ico - null null
+2026-08-30 17:40:13.131 +05:30 [INF] Request Started : GET /favicon.ico
+2026-08-30 17:40:13.141 +05:30 [INF] Request Completed : 404 10.124
+2026-08-30 17:40:13.143 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7120/favicon.ico - 404 0 null 17.5034ms
+2026-08-30 17:40:13.149 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7120/favicon.ico, Response status code: 404
+2026-08-30 17:40:33.687 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:40:33.693 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:41:03.719 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:41:03.722 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:41:33.753 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:41:33.759 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:42:03.781 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:42:03.787 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:42:33.801 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:42:33.809 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:43:03.851 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:43:03.858 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:43:33.865 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:43:33.870 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:44:03.877 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:44:03.880 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:44:33.905 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:44:33.909 +05:30 [INF] Completed charging sessions found: 38
+2026-08-30 17:45:03.933 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Amount], [c].[ChargerId], [c].[EndTime], [c].[EnergyConsumedKWh], [c].[StartTime], [c].[Status], [c].[VehicleId]
+FROM [ChargingSessions] AS [c]
+WHERE [c].[Status] = N'Completed'
+2026-08-30 17:45:03.950 +05:30 [INF] Completed charging sessions found: 38

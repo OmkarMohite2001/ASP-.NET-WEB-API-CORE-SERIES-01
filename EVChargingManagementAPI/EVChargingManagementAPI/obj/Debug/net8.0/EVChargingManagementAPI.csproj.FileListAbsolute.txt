@@ -166,3 +166,9 @@ D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Castle.Core.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\Moq.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\xunit.abstractions.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\xunit.assert.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\xunit.core.dll
+D:\Vs_Code\ASP DOT NET SERIES 01\EVChargingManagementAPI\EVChargingManagementAPI\bin\Debug\net8.0\xunit.execution.dotnet.dll
