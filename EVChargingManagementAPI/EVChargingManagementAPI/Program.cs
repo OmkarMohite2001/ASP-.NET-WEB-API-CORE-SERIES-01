@@ -34,6 +34,7 @@ builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Emai
 builder.Services.AddControllers(options =>
 options.Filters.Add<ApiLoggingFilter>());
 // Register repositories
+
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddScoped<IChargingStationRepository, ChargingStationRepository>();
@@ -118,6 +119,16 @@ builder.Services.AddSwaggerGen(options =>
             }
         });
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -133,6 +144,7 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
 app.UseRateLimiter();
 app.UseAuthentication();
+app.UseCors("AllowFrontend");
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();

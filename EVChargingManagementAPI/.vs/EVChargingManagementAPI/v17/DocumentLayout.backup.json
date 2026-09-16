@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EVChargingManagementAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|d:\\vs_code\\asp dot net series 01\\evchargingmanagementapi\\evchargingmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|solutionrelative:evchargingmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1C336E1-0E60-43A3-866B-194AFA5B6F99}|Ev\u002BVChargingManagementAPI.Tests\\Ev\u002BVChargingManagementAPI.Tests.csproj|d:\\vs_code\\asp dot net series 01\\evchargingmanagementapi\\ev\u002Bvchargingmanagementapi.tests\\customercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1C336E1-0E60-43A3-866B-194AFA5B6F99}|Ev\u002BVChargingManagementAPI.Tests\\Ev\u002BVChargingManagementAPI.Tests.csproj|solutionrelative:ev\u002Bvchargingmanagementapi.tests\\customercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|d:\\vs_code\\asp dot net series 01\\evchargingmanagementapi\\evchargingmanagementapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|solutionrelative:evchargingmanagementapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|d:\\vs_code\\asp dot net series 01\\evchargingmanagementapi\\evchargingmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D975619-8F56-4EC2-A372-DCF06FD8607A}|EVChargingManagementAPI\\EVChargingManagementAPI.csproj|solutionrelative:evchargingmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerControllerTests.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EVChargingManagementAPI\\Ev\u002BVChargingManagementAPI.Tests\\CustomerControllerTests.cs",
               "RelativeDocumentMoniker": "Ev\u002BVChargingManagementAPI.Tests\\CustomerControllerTests.cs",
@@ -42,24 +42,24 @@
               "RelativeToolTip": "Ev\u002BVChargingManagementAPI.Tests\\CustomerControllerTests.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAkwIEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T11:27:27.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T11:27:27.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EVChargingManagementAPI\\EVChargingManagementAPI\\Program.cs",
               "RelativeDocumentMoniker": "EVChargingManagementAPI\\Program.cs",
               "ToolTip": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EVChargingManagementAPI\\EVChargingManagementAPI\\Program.cs",
               "RelativeToolTip": "EVChargingManagementAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T17:13:37.155Z"
+              "WhenOpened": "2026-08-29T17:13:37.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Vs_Code\\ASP DOT NET SERIES 01\\EVChargingManagementAPI\\EVChargingManagementAPI\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "EVChargingManagementAPI\\Controllers\\CustomersController.cs",

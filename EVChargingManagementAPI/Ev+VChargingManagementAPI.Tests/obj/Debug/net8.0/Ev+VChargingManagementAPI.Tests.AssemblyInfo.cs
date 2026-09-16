@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ev+VChargingManagementAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63272c59becb9b5684b4416bbb09ca0b3af6f911")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d62e6a3c52e595c10e6ecb8a8d0b1778eb1cdb0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ev+VChargingManagementAPI.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ev+VChargingManagementAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

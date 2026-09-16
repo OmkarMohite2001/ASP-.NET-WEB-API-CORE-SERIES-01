@@ -1,0 +1,48 @@
+﻿@model MiniCalculatorMVC.Models.CalculatorModel
+@{
+    ViewData["Title"] = "Mini Calculator";
+}
+
+<div class="calculator-container">
+    <div class="calculator-card">
+           <h1>Mini Calculator</h1>
+           <p class="SUBTITLE">ASP.NET Core MVC</p>
+           <form asp-action="Index" method="post">
+               <div class="form-group">
+                   <label asp-for="FirstNumber">First Number</label>
+                   <input asp-for="FirstNumber" class="form-control" placeholder="Enter First Number"/>
+                   <span asp-validation-for="FirstNumber" class="text-danger"></span>
+               </div>
+            <div class="form-group">
+                <label asp-for="SecondNumber">Second Number</label>
+                <input asp-for="SecondNumber" class="form-control" placeholder="Enter Second Number" />
+                <span asp-validation-for="SecondNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Operation">Operation</label>
+                <select asp-for="Operation" class="form-control">
+                    <option value="">--Select Operation--</option>
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Substraction (-)</option>
+                    <option value="*">Multiplication (*)</option>
+                    <option value="/">Division (/)</option>
+                </select>
+                <span asp-validation-for="Operation" class="text-danger"></span>
+            </div>
+            <button type="submit" class="calculate-btn">Calculate</button>
+           </form>
+           @if(Model?.Result != null)
+        {
+            <div class="result-box">
+                <span>Result</span>
+                <strong>@Model.Result</strong>
+            </div>
+        }
+    </div>
+</div>
+@section Scripts
+{
+@{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
